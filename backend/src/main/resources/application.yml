@@ -19,7 +19,7 @@ spring:
   jpa:
     properties:
       hibernate:
-        default_schema: ${SCHEMA:mysql}
+        default_schema: ${SCHEMA:abbtech}
     hibernate:
       ddl-auto: update
     show-sql: true

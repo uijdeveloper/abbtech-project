@@ -102,5 +102,5 @@ git clone https://github.com/uijdeveloper/abbtech-project.git
 cd abbtech-project/frontend
 
 docker build -t my-frontend-app:v1.0.0 .
-docker run -di -e BACKEND=${backend_url}  --name  my-frontend-app -p 80:80 my-frontend-app:v1.0.0
+docker run -di -e BACKEND_API=${backend_url}  --name  my-frontend-app -p 80:80 my-frontend-app:v1.0.0
 
