@@ -12,9 +12,9 @@ spring:
         enabled: true
     baggage-keys: principal
   datasource:
-    url: ${MYSQL_URL:jdbc:mysql://localhost:3306/phonebookdb}
-    username: ${MYSQL_USERNAME:root}
-    password: ${MYSQL_PASSWORD:Amid-2139}
+    url: ${MYSQL_DB_URL:jdbc:mysql://localhost:3306/abbtech?useSSL=false}
+    username: ${MYSQL_DB_USERNAME:root}
+    password: ${MYSQL_DB_PASSWORD:unft11270506}
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     properties:

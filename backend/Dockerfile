@@ -1,9 +1,9 @@
-FROM gradle:jdk8 AS build
+FROM gradle:jdk11 AS build
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 RUN gradle build --no-daemon
 
-FROM openjdk:8-jre-slim
+FROM openjdk:11-jre-slim
 
 EXPOSE 8080 8081
 RUN mkdir /app
