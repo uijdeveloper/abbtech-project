@@ -102,5 +102,5 @@ git clone https://github.com/uijdeveloper/abbtech-project.git
 cd abbtech-project/backend
 
 docker build -t my-backend-app:v1.0.0 .
-docker run -di --name my-backend-app -p 80:80 my-backend-app:v1.0.0
+docker run -di -e MYSQL_DB_URL=${msql_url} -e MYSQL_DB_USERNAME=${msql_username} -e MYSQL_DB_PASSWORD=${msql_password} --name my-backend-app -p 80:80 my-backend-app:v1.0.0
 
